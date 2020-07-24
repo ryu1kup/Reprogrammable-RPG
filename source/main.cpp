@@ -50,11 +50,11 @@ int main(int argc, char* argv[])
 			if(enemy->GetHitPoint()<=0 || character->GetHitPoint()<=0)break;
 			turn++;
 		}
-		std::cout << "battle end (HP=" << character->GetHitPoint() << ")" <<std::endl;
+		//std::cout << "battle end (HP=" << character->GetHitPoint() << ")" <<std::endl;
 		if(character->GetHitPoint()>0)std::cout << "user win" << std::endl;
 		if(character->GetHitPoint()<=0){
 			std::cout << "user lost" << std::endl;
-			std::cout << "GAME OVER ...  (ENEMY Lv." << i << ")" << std::endl;
+			std::cout << "GAME OVER ...  (ENEMY Lv." << i << " /Lv.100)" << std::endl;
 			return -1;
 		}
 		std::cout << ""  <<std::endl;
